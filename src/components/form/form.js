@@ -6,7 +6,7 @@ function Formulario() {
       <Form>
         <Inputs>
           <Label htmlFor="name"> Nome </Label>         
-          <Input type="text" id="name" placeholder='Digite seu nome'></Input>
+          <Input type="text" name='name' id="name" placeholder='Digite seu nome'></Input>
                   
         </Inputs>
         <Inputs>
