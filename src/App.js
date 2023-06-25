@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import { createGlobalStyle, styled } from "styled-components";
+import Formulario from "./components/form/form";
+import Title from "./components/titulo/titulo";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <GlobalStyle />
+      <Title title= "Formulario"/>
+      <Formulario />
+    </Container>
   );
 }
 
 export default App;
+
+const GlobalStyle = createGlobalStyle`
+*{
+  margin: 0;
+padding: 0;
+background-color: #eee2dc
+}`
+const Container = styled.div`
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center:
+
+`
+
